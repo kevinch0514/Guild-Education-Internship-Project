@@ -1,0 +1,296 @@
+/* All-encompasing CSS */
+body {
+  margin: 0;
+}
+a:link {
+  text-decoration: none;
+}
+button {
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+
+/* First section : Background Image */
+.landing-page-background {
+  background-image: url('header.png');
+  background-size: cover;
+  height: 250px;
+  padding-top:80px;
+}
+
+
+/* Second section : The Working Adult Learner Imperative */
+.problem {
+  background: #ffffff;
+  padding: 0% 0% 0.3%;
+}
+.title {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #007D8C;
+
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 3em;
+  text-align: center;
+  line-height: 60px;
+}
+.subhead {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  color: #303030;
+
+  margin: 2% 25%;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+
+/* Third section : Strategies */
+.strategies {
+  background: #F1F3F4;
+  padding: 0% 15% 4%;
+}
+.strategies-title {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 4% 2% 2%;
+  font-size: 2rem;
+
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+}
+.whitepaper-intro {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #007D8C;
+  padding: 4% 10%;
+
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 22px;
+}
+.whitepaper-intro-info {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  color: #303030;
+  padding: 4%;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+.whitepaper-title {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #303030;
+  margin: 2% 10% 5%;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+.whitepaper-description {
+  font-family: 'Nunito', sans-serif;
+  color: #303030;
+  text-align: left;
+  margin: 10px 25px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+.wp-icon {
+  height: 84px;
+  width: 92px;
+}
+.subtitle {
+  height: 90px;
+}
+.overlay {
+  height: 88%;
+
+  top: 0px;
+  bottom: 50px;
+  left: 0px;
+  width: 100%;
+  background-color: #C8E7E9;
+  margin: 50px 0px 0px;
+  overflow: visible;
+  padding: 0px 0px 10px;
+}
+.overlay-content {
+  transform: translate(0px, -50px);
+}
+
+/* Grid container */
+.strategies-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  background-color: #F1F3F4;
+  padding: 10px;
+}
+.strategies-grid-container > div {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 30px;
+  height: 250px;
+}
+
+
+/* MODAL */
+#learn-more {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #007D8C;
+  border: none;
+  /* padding: 15px 32px; */
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+  height: 48px;
+  width: 182px;
+  letter-spacing: 1px;
+  /* position: relative; */
+  bottom: 40px;
+}
+#download-whitepaper-button {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  background: #007D8C;
+  border-radius: 4px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 30px;
+  margin: auto;
+}
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  z-index: 1;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: .05rem;
+  width: 24rem;
+}
+.close-button {
+  float: right;
+  width: 2.0rem;
+  line-height: 2.0rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 1.0rem;
+  background-color: lightgray;
+  margin: 15px;
+}
+.close-button:hover {
+  background-color: darkgray;
+}
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-overlay {
+  height: 88%;
+  width: 100%;
+  background-color: #C8E7E9;
+  padding: 1rem 0rem 1rem;
+}
+.modal-image {
+  padding: 15px 100px 5px 0px;
+}
+
+
+/* Fourth section : Guild Footer */
+.footer {
+  background: #033246;
+  padding: 1%
+}
+.footer-information {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  color: #FFFFFF;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 26px;
+}
+.guild-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.footer-links {
+  color: white;
+}
+.footer-links:hover {
+  color: #007D8C;
+}
+
+
+/* Responsive to screen size */
+@media screen and (max-width: 600px) {
+  .landing-page-background {
+    background-color: #C8E7E9;
+    background-image: none;
+    height: 50px;
+    padding-top: 0px;
+  }
+  .subhead {
+    margin: 6%;
+    font-size: 16px;
+  }
+  .strategies {
+    background: #F1F3F4;
+    padding: 1% 2% 4%;
+  }
+  .strategies-title {
+    padding: 0% 2%;
+  }
+  .modal-content {
+    width: 20rem;
+}
+}
